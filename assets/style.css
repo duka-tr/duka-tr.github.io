@@ -93,3 +93,6 @@ footer {
   padding-top: 32px;
   padding-bottom: 32px;
 }
+
+.app-logo { display: block; margin: 32px 0 0; border-radius: 22%; }
+.card .app-logo { margin: 0 0 12px; }
