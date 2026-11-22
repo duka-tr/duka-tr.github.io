@@ -3,43 +3,141 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ScanRead</title>
+  <title>ScanRead — Ekrandaki metni cihazınızda çevirin</title>
   <meta name="description" content="ScanRead: ekrandaki metni cihazınızda çeviren açık kaynak Android uygulaması.">
+  <meta name="theme-color" content="#fafaf7" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0e1015" media="(prefers-color-scheme: dark)">
   <meta property="og:title" content="ScanRead">
+  <meta property="og:description" content="Ekrandaki metni anında, tamamen cihazınızda çevirin.">
   <meta property="og:image" content="https://duka.tr/assets/scanread-icon-512.png">
+  <meta property="og:url" content="https://duka.tr/scanread/">
   <link rel="stylesheet" href="/assets/style.css">
   <link rel="icon" href="/assets/scanread-logo.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/assets/scanread-icon-512.png">
 </head>
-<body>
-  <header>
-    <a class="brand" href="/">duka.tr</a>
-    <nav><a href="/scanread/privacy/">Gizlilik</a><a href="mailto:support@duka.tr">İletişim</a></nav>
+<body class="theme-scanread">
+  <a class="skip" href="#main">İçeriğe geç</a>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/" aria-label="duka.tr ana sayfa"><img src="/assets/duka-logo.svg" alt="" width="30" height="30"><span>duka<span class="tld">.tr</span></span></a>
+      <nav class="site-nav" aria-label="Ana menü">
+        <a href="/scanread/" aria-current="page">ScanRead</a>
+        <a href="/scanread/privacy/">Gizlilik</a>
+        <a href="mailto:support@duka.tr">İletişim</a>
+      </nav>
+    </div>
   </header>
-  <main>
-    <img class="app-logo" src="/assets/scanread-logo.svg" width="96" height="96" alt="ScanRead">
-    <h1>ScanRead</h1>
-    <p class="lead">Ekrandaki metni anında, tamamen cihazınızda çevirin.</p>
 
-    <a class="button" href="https://github.com/duka-tr/scan-read/releases/latest">APK indir</a>
-    <a class="button secondary" href="https://github.com/duka-tr/scan-read">Kaynak kodu</a>
+  <main id="main">
+    <section class="hero">
+      <div class="wrap app-hero">
+        <div>
+          <img class="hero-logo" src="/assets/scanread-logo.svg" width="84" height="84" alt="ScanRead">
+          <p class="eyebrow">Android · Ücretsiz · Açık kaynak</p>
+          <h1>ScanRead</h1>
+          <p class="lead">Ekrandaki metni anında, tamamen cihazınızda çevirin.</p>
+          <p class="en">Translate the text on your screen instantly, entirely on your device.</p>
+          <div class="actions">
+            <a class="button" href="https://github.com/duka-tr/scan-read/releases/latest">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11"/><path d="M7 10l5 5 5-5"/><path d="M5 20h14"/></svg>
+              APK indir
+            </a>
+            <a class="button ghost" href="https://github.com/duka-tr/scan-read">Kaynak kodu</a>
+          </div>
+        </div>
 
-    <h2>Neler yapar?</h2>
-    <ul>
-      <li>Herhangi bir uygulamanın üstündeki yüzen butona dokunun; çeviriler metnin bulunduğu yerde, konuşma balonlarının içinde aynı tarzda görünür.</li>
-      <li>Metin tanıma ve çeviri telefonunuzda çalışır. Okuduklarınız cihazınızdan çıkmaz.</li>
-      <li>Dil dosyaları bir kez indirildikten sonra internet gerekmez.</li>
-      <li>Ücretsiz, reklamsız ve açık kaynaklı (Apache 2.0).</li>
-    </ul>
+        <figure class="demo" aria-label="Örnek: konuşma balonlarındaki metin yerinde çevrilir">
+          <div class="demo-bar" aria-hidden="true"><span></span><span></span><span></span></div>
+          <div class="panel">
+            <p class="bubble">Bu gece yola çıkıyoruz!<span class="orig" lang="en">We set off tonight!</span></p>
+            <p class="bubble right">Harita sende mi?<span class="orig" lang="en">Do you have the map?</span></p>
+            <p class="bubble">Elbette. Hadi gidelim.<span class="orig" lang="en">Of course. Let's go.</span></p>
+          </div>
+          <div class="demo-fab" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8V6a2 2 0 0 1 2-2h2"/><path d="M16 4h2a2 2 0 0 1 2 2v2"/><path d="M20 16v2a2 2 0 0 1-2 2h-2"/><path d="M8 20H6a2 2 0 0 1-2-2v-2"/><path d="M8 12h8"/></svg>
+          </div>
+          <figcaption class="demo-caption">Çeviri, orijinal metnin yerinde ve aynı tarzda görünür.</figcaption>
+        </figure>
+      </div>
+    </section>
 
-    <h2>English</h2>
-    <p>ScanRead reads the text on your screen, translates it on the device and draws the translation right where the original was. No accounts, no ads, no data leaves your phone. Free and open source.</p>
+    <section class="section" aria-labelledby="features-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="features-title">Neler yapar?</h2>
+        </div>
+        <div class="grid grid-2">
+          <div class="card feature">
+            <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-7l-4 3v-3H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z"/><path d="M8 10h8M8 13h5"/></svg></div>
+            <h3>Metnin olduğu yerde çeviri</h3>
+            <p>Herhangi bir uygulamanın üstündeki yüzen butona dokunun; çeviriler metnin bulunduğu yerde, konuşma balonlarının içinde aynı tarzda görünür.</p>
+          </div>
+          <div class="card feature">
+            <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M10 9.5V8a2 2 0 0 1 4 0v1.5"/><rect x="9" y="9.5" width="6" height="5" rx="1"/></svg></div>
+            <h3>Tamamen cihazınızda</h3>
+            <p>Metin tanıma ve çeviri telefonunuzda çalışır. Okuduklarınız cihazınızdan çıkmaz.</p>
+          </div>
+          <div class="card feature">
+            <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8.8a15 15 0 0 1 5-2.6"/><path d="M11 5.1A15 15 0 0 1 22 8.8"/><path d="M5 12.5a10 10 0 0 1 4.5-2.3"/><path d="M15.5 10.6A10 10 0 0 1 19 12.5"/><path d="M8.5 16a5 5 0 0 1 7 0"/><path d="M12 20h.01"/><path d="M3 3l18 18"/></svg></div>
+            <h3>İnternetsiz çalışır</h3>
+            <p>Dil dosyaları bir kez indirildikten sonra internet gerekmez.</p>
+          </div>
+          <div class="card feature">
+            <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7l-5 5 5 5"/><path d="M16 7l5 5-5 5"/><path d="M13.5 4l-3 16"/></svg></div>
+            <h3>Ücretsiz ve açık kaynak</h3>
+            <p>Ücretsiz, reklamsız ve açık kaynaklı (Apache 2.0).</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <h2>Destek / Support</h2>
-    <p>Sorun ve öneriler için <a href="https://github.com/duka-tr/scan-read/issues">GitHub Issues</a> ya da <a href="mailto:support@duka.tr">support@duka.tr</a>.</p>
+    <section class="section" aria-labelledby="how-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="how-title">Nasıl kullanılır?</h2>
+        </div>
+        <ol class="steps grid grid-3">
+          <li><h3>İndirin ve kurun</h3><p>Son sürümün APK dosyasını GitHub'dan indirip kurun.</p></li>
+          <li><h3>İzinleri verin</h3><p>Yüzen buton ve ekran yakalama için gereken izinleri onaylayın.</p></li>
+          <li><h3>Dokunun, okuyun</h3><p>Çevirmek istediğiniz ekranda yüzen butona dokunun.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="english-title">
+      <div class="wrap">
+        <div class="card" lang="en">
+          <h2 id="english-title">In English</h2>
+          <p class="muted" style="margin:0">ScanRead reads the text on your screen, translates it on the device and draws the translation right where the original was. No accounts, no ads, no data leaves your phone. Free and open source.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="support-title">
+      <div class="wrap">
+        <div class="card band">
+          <div>
+            <h2 id="support-title">Destek / Support</h2>
+            <p>Sorun ve öneriler için GitHub Issues ya da e-posta.</p>
+          </div>
+          <div class="actions">
+            <a class="button" href="https://github.com/duka-tr/scan-read/issues">GitHub Issues</a>
+            <a class="button ghost" href="mailto:support@duka.tr">support@duka.tr</a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer>
-    © 2026 duka.tr · <a href="/scanread/privacy/">Gizlilik politikası / Privacy policy</a>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <a class="brand" href="/"><img src="/assets/duka-logo.svg" alt="" width="24" height="24"><span>duka<span class="tld">.tr</span></span></a>
+      <nav class="footer-links" aria-label="Alt menü">
+        <a href="/scanread/privacy/">Gizlilik politikası / Privacy policy</a>
+        <a href="https://github.com/duka-tr/scan-read">GitHub</a>
+        <span>© 2026 duka.tr</span>
+      </nav>
+    </div>
   </footer>
 </body>
 </html>

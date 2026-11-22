@@ -4,23 +4,41 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ScanRead Gizlilik Politikası / Privacy Policy</title>
+  <meta name="description" content="ScanRead gizlilik politikası: kişisel veri toplanmaz, ekran içeriği yalnızca cihazınızda işlenir.">
+  <meta name="theme-color" content="#fafaf7" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0e1015" media="(prefers-color-scheme: dark)">
   <link rel="stylesheet" href="/assets/style.css">
   <link rel="icon" href="/assets/scanread-logo.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/assets/scanread-icon-512.png">
 </head>
-<body>
-  <header>
-    <a class="brand" href="/">duka.tr</a>
-    <nav><a href="/scanread/">ScanRead</a><a href="mailto:support@duka.tr">İletişim</a></nav>
+<body class="theme-scanread">
+  <a class="skip" href="#main">İçeriğe geç</a>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/" aria-label="duka.tr ana sayfa"><img src="/assets/duka-logo.svg" alt="" width="30" height="30"><span>duka<span class="tld">.tr</span></span></a>
+      <nav class="site-nav" aria-label="Ana menü">
+        <a href="/scanread/">ScanRead</a>
+        <a href="/scanread/privacy/" aria-current="page">Gizlilik</a>
+        <a href="mailto:support@duka.tr">İletişim</a>
+      </nav>
+    </div>
   </header>
-  <main>
+  <main id="main" class="wrap">
+   <article class="doc">
+    <section id="turkce">
+    <p class="eyebrow">ScanRead</p>
     <h1>Gizlilik Politikası</h1>
-    <p class="lang">Son güncelleme: 23 Kasım 2026 · <a href="#english">English below</a></p>
+    <div class="doc-meta">
+      <span>Son güncelleme: 23 Kasım 2026</span>
+      <span class="lang-switch"><a href="#turkce" aria-current="true">Türkçe</a><a href="#english">English</a></span>
+    </div>
 
     <p>Bu politika, duka.tr tarafından geliştirilen ScanRead Android uygulaması için geçerlidir.</p>
 
-    <h2>Kısaca</h2>
-    <p>ScanRead kişisel veri toplamaz, saklamaz ve paylaşmaz. Ekran içeriği yalnızca cihazınızda işlenir.</p>
+    <div class="callout">
+      <h2>Kısaca</h2>
+      <p>ScanRead kişisel veri toplamaz, saklamaz ve paylaşmaz. Ekran içeriği yalnızca cihazınızda işlenir.</p>
+    </div>
 
     <h2>Ekran içeriği</h2>
     <p>Uygulama, yalnızca siz yüzen butona dokunduğunuzda ekranın bir görüntüsünü alır. Bu görüntüdeki metin tanınır, çevrilir ve çeviri ekranda gösterilir. Bu işlemlerin tamamı cihazınızda gerçekleşir; görüntüler ve metinler hiçbir sunucuya gönderilmez ve işlem bittikten sonra saklanmaz.</p>
@@ -54,13 +72,24 @@
     <h2>Değişiklikler ve iletişim</h2>
     <p>Bu politika değişirse güncel hali bu sayfada yayımlanır. Sorularınız için: <a href="mailto:support@duka.tr">support@duka.tr</a></p>
 
-    <h1 id="english">Privacy Policy</h1>
-    <p class="lang">Last updated: November 23, 2026</p>
+    </section>
+
+    <hr class="doc-divider">
+
+    <section id="english" lang="en">
+    <p class="eyebrow">ScanRead</p>
+    <h1>Privacy Policy</h1>
+    <div class="doc-meta">
+      <span>Last updated: November 23, 2026</span>
+      <span class="lang-switch"><a href="#turkce">Türkçe</a><a href="#english" aria-current="true">English</a></span>
+    </div>
 
     <p>This policy applies to the ScanRead Android app developed by duka.tr.</p>
 
-    <h2>In short</h2>
-    <p>ScanRead does not collect, store or share personal data. Screen content is processed only on your device.</p>
+    <div class="callout">
+      <h2>In short</h2>
+      <p>ScanRead does not collect, store or share personal data. Screen content is processed only on your device.</p>
+    </div>
 
     <h2>Screen content</h2>
     <p>The app captures the screen only when you tap the floating button. The text in that capture is recognized, translated and shown on screen, entirely on your device. Captures and text are never sent to any server and are not kept after processing.</p>
@@ -87,7 +116,19 @@
 
     <h2>Changes and contact</h2>
     <p>If this policy changes, the current version is published on this page. Questions: <a href="mailto:support@duka.tr">support@duka.tr</a></p>
+    </section>
+   </article>
   </main>
-  <footer>© 2026 duka.tr</footer>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <a class="brand" href="/"><img src="/assets/duka-logo.svg" alt="" width="24" height="24"><span>duka<span class="tld">.tr</span></span></a>
+      <nav class="footer-links" aria-label="Alt menü">
+        <a href="/scanread/">ScanRead</a>
+        <a href="mailto:support@duka.tr">support@duka.tr</a>
+        <span>© 2026 duka.tr</span>
+      </nav>
+    </div>
+  </footer>
 </body>
 </html>
