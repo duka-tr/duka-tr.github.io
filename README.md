@@ -89,7 +89,7 @@ repository name is also its address, `duka.tr/<name>/`, so choose a short name t
 1. Create `<app>/index.html`, starting from `scanread/index.html`: shared header, language buttons and footer.
 2. Add the app's icon to `assets/` as SVG, plus a 512 px PNG for `apple-touch-icon` and `og:image`.
 3. Give the page its own accent color with a body class, like `theme-scanread` in `assets/style.css`.
-4. Add a product card to the home page (`#apps`) under its platform, such as "Android apps" or "Web tools"; for a
+4. Add a product card to the home page (`#apps`) under its platform, such as "Mobile apps" or "Web tools"; for a
    new platform, copy a whole `.category` block. Add the page to `sitemap.xml`. The site-wide footer and `404.html`
    do not list apps, so they stay the same.
 5. If the app has a privacy policy, put it at `<app>/privacy/` so store listings can link to a stable address.

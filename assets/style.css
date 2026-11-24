@@ -217,6 +217,7 @@ p { margin: 0 0 14px; }
 .product-icon { width: 56px; height: 56px; border-radius: 14px; }
 .product h4 { font-size: 1.15rem; line-height: 1.25; letter-spacing: -.01em; margin: 2px 0 4px; }
 .product p { color: var(--muted); font-size: .95rem; margin: 0; }
+.product .product-platform { color: var(--faint); font-size: .8rem; font-weight: 600; margin: 0 0 6px; }
 .product .actions { margin-top: 14px; gap: 8px; }
 
 /* ---------- App page hero ---------- */
