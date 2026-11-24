@@ -156,6 +156,7 @@ p { margin: 0 0 14px; }
 .button:hover { background: var(--accent-strong); color: var(--on-accent); }
 .button:active { transform: translateY(1px); }
 .button svg { width: 18px; height: 18px; flex: none; }
+.button.small { padding: 7px 14px; font-size: .9rem; }
 .button.ghost {
   background: transparent; color: var(--text); border-color: var(--border);
 }
@@ -203,25 +204,20 @@ p { margin: 0 0 14px; }
 }
 .icon svg { width: 22px; height: 22px; }
 
-/* App showcase on the home page */
-.app-list { display: grid; gap: 16px; }
-.app-card {
-  display: grid; grid-template-columns: auto 1fr; gap: 24px; align-items: start;
-  padding: 32px; box-shadow: var(--shadow);
+/* Products on the home page, grouped by platform */
+.category + .category { margin-top: 36px; }
+.category-title {
+  font-size: .8rem; font-weight: 650; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--faint); margin: 0 0 12px;
 }
-.app-card .app-icon { width: 88px; height: 88px; border-radius: 22px; }
-.app-card h3 { font-size: 1.5rem; margin-bottom: 4px; }
-.app-card .actions { margin-top: 20px; }
-@media (max-width: 560px) {
-  .app-card { grid-template-columns: 1fr; padding: 24px; gap: 16px; }
-  .app-card .app-icon { width: 72px; height: 72px; }
+.product {
+  display: grid; grid-template-columns: auto 1fr; gap: 18px; align-items: start;
+  padding: 22px; box-shadow: var(--shadow);
 }
-
-.tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0 16px; padding: 0; list-style: none; }
-.tags li {
-  font-size: .8rem; font-weight: 600; color: var(--muted);
-  border: 1px solid var(--border); border-radius: 999px; padding: 3px 10px;
-}
+.product-icon { width: 56px; height: 56px; border-radius: 14px; }
+.product h4 { font-size: 1.15rem; line-height: 1.25; letter-spacing: -.01em; margin: 2px 0 4px; }
+.product p { color: var(--muted); font-size: .95rem; margin: 0; }
+.product .actions { margin-top: 14px; gap: 8px; }
 
 /* ---------- App page hero ---------- */
 

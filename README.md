@@ -18,7 +18,7 @@ step, no framework, no external fonts, no cookies, no analytics and no trackers.
 
 | Path | Page |
 | --- | --- |
-| [`/`](https://duka.tr/) | Home page: principles and the list of apps and tools |
+| [`/`](https://duka.tr/) | Home page: principles and products, grouped by platform |
 | [`/scanread/`](https://duka.tr/scanread/) | [ScanRead](https://github.com/duka-tr/scan-read), on-device screen translation for Android |
 | [`/scanread/privacy/`](https://duka.tr/scanread/privacy/) | ScanRead privacy policy (linked from the app and the store listing) |
 | [`/diff/`](https://duka.tr/diff/) | [DUKA Diff](https://github.com/duka-tr/diff), served from its own repository |
@@ -82,10 +82,16 @@ that every file, including `.well-known/`, is served unchanged. A push to `main`
 
 ## Adding an app page
 
+Repository names follow the product name in lowercase with hyphens, without a `duka` prefix (the organization
+already says it): ScanRead → `scan-read`, DUKA Diff → `diff`. For a web tool published with GitHub Pages the
+repository name is also its address, `duka.tr/<name>/`, so choose a short name that will not need to change.
+
 1. Create `<app>/index.html`, starting from `scanread/index.html`: shared header, language buttons and footer.
 2. Add the app's icon to `assets/` as SVG, plus a 512 px PNG for `apple-touch-icon` and `og:image`.
 3. Give the page its own accent color with a body class, like `theme-scanread` in `assets/style.css`.
-4. Add an app card to the home page (`#apps`), and the page to the footer links, `404.html` and `sitemap.xml`.
+4. Add a product card to the home page (`#apps`) under its platform, such as "Android apps" or "Web tools"; for a
+   new platform, copy a whole `.category` block. Add the page to `sitemap.xml`. The site-wide footer and `404.html`
+   do not list apps, so they stay the same.
 5. If the app has a privacy policy, put it at `<app>/privacy/` so store listings can link to a stable address.
 
 ## Project structure
