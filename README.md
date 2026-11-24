@@ -21,7 +21,7 @@ step, no framework, no external fonts, no cookies, no analytics and no trackers.
 | [`/`](https://duka.tr/) | Home page: principles and products, grouped by platform |
 | [`/scanread/`](https://duka.tr/scanread/) | [ScanRead](https://github.com/duka-tr/scan-read), on-device screen translation for Android |
 | [`/scanread/privacy/`](https://duka.tr/scanread/privacy/) | ScanRead privacy policy (linked from the app and the store listing) |
-| [`/diff/`](https://duka.tr/diff/) | [DUKA Diff](https://github.com/duka-tr/diff), served from its own repository |
+| [`/diff/`](https://duka.tr/diff/) | [Diff](https://github.com/duka-tr/diff), served from its own repository |
 | `404.html` | "Page not found" page for the whole domain |
 
 `/diff/` is not in this repository. GitHub Pages serves the `duka-tr/diff` project site under this domain.
@@ -83,7 +83,7 @@ that every file, including `.well-known/`, is served unchanged. A push to `main`
 ## Adding an app page
 
 Repository names follow the product name in lowercase with hyphens, without a `duka` prefix (the organization
-already says it): ScanRead → `scan-read`, DUKA Diff → `diff`. For a web tool published with GitHub Pages the
+already says it): ScanRead → `scan-read`, Diff → `diff`. For a web tool published with GitHub Pages the
 repository name is also its address, `duka.tr/<name>/`, so choose a short name that will not need to change.
 
 1. Create `<app>/index.html`, starting from `scanread/index.html`: shared header, language buttons and footer.
@@ -108,7 +108,7 @@ repository name is also its address, `duka.tr/<name>/`, so choose a short name t
 │   ├── lang.js               English / Turkish language selection
 │   ├── duka-logo.svg         duka.tr logo (header, favicon); duka-icon-512.png for sharing previews
 │   ├── scanread-logo.svg     ScanRead icon; scanread-icon-512.png for sharing previews
-│   └── diff-logo.svg         DUKA Diff icon (home page card)
+│   └── diff-logo.svg         Diff icon (home page card)
 ├── .well-known/security.txt  Contact for security reports
 ├── robots.txt, sitemap.xml   Search engine hints
 ├── CNAME                     Custom domain for GitHub Pages
@@ -130,5 +130,5 @@ Every visible text needs both an English and a Turkish version.
 
 Copyright 2026 duka.tr. The code is licensed under the [Apache License, Version 2.0](LICENSE).
 
-The duka.tr, ScanRead and DUKA Diff names and logos identify duka.tr and its apps. The license does not allow using
+The duka.tr, ScanRead and Diff names and logos identify duka.tr and its apps. The license does not allow using
 them as the branding of another site or product (see [NOTICE](NOTICE)).
