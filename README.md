@@ -93,6 +93,8 @@ repository name is also its address, `duka.tr/<name>/`, so choose a short name t
    new platform, copy a whole `.category` block. Add the page to `sitemap.xml`. The site-wide footer and `404.html`
    do not list apps, so they stay the same.
 5. If the app has a privacy policy, put it at `<app>/privacy/` so store listings can link to a stable address.
+6. Add the product to the organization profile, [`duka-tr/.github` → `profile/README.md`](https://github.com/duka-tr/.github/blob/main/profile/README.md),
+   under the same platform heading.
 
 ## Project structure
 
@@ -124,7 +126,8 @@ repository name is also its address, `duka.tr/<name>/`, so choose a short name t
 ## Contributing
 
 Fixes for typos, translations and accessibility are welcome as pull requests. Please keep the site dependency-free.
-Every visible text needs both an English and a Turkish version.
+Every visible text needs both an English and a Turkish version. See the [contributing guide](https://github.com/duka-tr/.github/blob/main/CONTRIBUTING.md) for the ground
+rules, and report security issues privately as described in the [security policy](https://github.com/duka-tr/.github/blob/main/SECURITY.md).
 
 ## License
 
