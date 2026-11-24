@@ -1,44 +1,50 @@
 <!doctype html>
-<html lang="tr">
+<html lang="en" data-title-en="ScanRead Privacy Policy — duka.tr" data-title-tr="ScanRead Gizlilik Politikası — duka.tr">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ScanRead Gizlilik Politikası / Privacy Policy</title>
-  <meta name="description" content="ScanRead gizlilik politikası: kişisel veri toplanmaz, ekran içeriği yalnızca cihazınızda işlenir.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+  <title>ScanRead Privacy Policy / Gizlilik Politikası</title>
+  <meta name="description" content="ScanRead privacy policy: no personal data is collected; screen content is processed only on your device. ScanRead gizlilik politikası.">
   <meta name="theme-color" content="#fafaf7" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#0e1015" media="(prefers-color-scheme: dark)">
   <link rel="canonical" href="https://duka.tr/scanread/privacy/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="duka.tr">
-  <meta property="og:title" content="ScanRead Gizlilik Politikası / Privacy Policy">
-  <meta property="og:description" content="ScanRead kişisel veri toplamaz; ekran içeriği yalnızca cihazınızda işlenir.">
+  <meta property="og:title" content="ScanRead Privacy Policy / Gizlilik Politikası">
+  <meta property="og:description" content="ScanRead collects no personal data; screen content is processed only on your device.">
   <meta property="og:image" content="https://duka.tr/assets/scanread-icon-512.png">
   <meta property="og:url" content="https://duka.tr/scanread/privacy/">
   <meta name="twitter:card" content="summary">
   <link rel="stylesheet" href="/assets/style.css">
+  <script src="/assets/lang.js"></script>
   <link rel="icon" href="/assets/scanread-logo.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/assets/scanread-icon-512.png">
 </head>
 <body class="theme-scanread">
-  <a class="skip" href="#main">İçeriğe geç</a>
+  <a class="skip" href="#main"><span data-l="en">Skip to content</span><span data-l="tr">İçeriğe geç</span></a>
   <header class="site-header">
     <div class="wrap">
-      <a class="brand" href="/" aria-label="duka.tr ana sayfa"><img src="/assets/duka-logo.svg" alt="" width="30" height="30"><span>duka<span class="tld">.tr</span></span></a>
-      <nav class="site-nav" aria-label="Ana menü">
-        <a href="/scanread/">ScanRead</a>
-        <a href="/scanread/privacy/" aria-current="page">Gizlilik</a>
-        <a href="mailto:support@duka.tr">İletişim</a>
+      <a class="brand" href="/" aria-label="duka.tr home" data-aria-en="duka.tr home" data-aria-tr="duka.tr ana sayfa"><img src="/assets/duka-logo.svg" alt="" width="30" height="30"><span>duka<span class="tld">.tr</span></span></a>
+      <nav class="site-nav" aria-label="Main menu" data-aria-en="Main menu" data-aria-tr="Ana menü">
+        <a class="nav-optional" href="/scanread/">ScanRead</a>
+        <a href="/scanread/privacy/" aria-current="page"><span data-l="en">Privacy</span><span data-l="tr">Gizlilik</span></a>
+        <a class="nav-optional" href="mailto:support@duka.tr"><span data-l="en">Contact</span><span data-l="tr">İletişim</span></a>
+        <div class="lang-switch" role="group" aria-label="Language / Dil">
+          <button type="button" data-set-lang="en" lang="en" aria-pressed="true">EN</button>
+          <button type="button" data-set-lang="tr" lang="tr" aria-pressed="false">TR</button>
+        </div>
       </nav>
     </div>
   </header>
   <main id="main" class="wrap">
    <article class="doc">
-    <section id="turkce">
+    <section id="turkce" lang="tr" data-doc-l="tr">
     <p class="eyebrow">ScanRead</p>
     <h1>Gizlilik Politikası</h1>
     <div class="doc-meta">
       <span>Son güncelleme: 23 Kasım 2026</span>
-      <span class="lang-switch"><a href="#turkce" aria-current="true">Türkçe</a><a href="#english">English</a></span>
+      <span class="lang-switch"><a href="#turkce" aria-current="true">Türkçe</a><a href="#english" data-set-lang="en">English</a></span>
     </div>
 
     <p>Bu politika, duka.tr tarafından geliştirilen ScanRead Android uygulaması için geçerlidir.</p>
@@ -84,12 +90,12 @@
 
     <hr class="doc-divider">
 
-    <section id="english" lang="en">
+    <section id="english" lang="en" data-doc-l="en">
     <p class="eyebrow">ScanRead</p>
     <h1>Privacy Policy</h1>
     <div class="doc-meta">
       <span>Last updated: November 23, 2026</span>
-      <span class="lang-switch"><a href="#turkce">Türkçe</a><a href="#english" aria-current="true">English</a></span>
+      <span class="lang-switch"><a href="#turkce" data-set-lang="tr">Türkçe</a><a href="#english" aria-current="true">English</a></span>
     </div>
 
     <p>This policy applies to the ScanRead Android app developed by duka.tr.</p>
@@ -131,8 +137,9 @@
   <footer class="site-footer">
     <div class="wrap">
       <a class="brand" href="/"><img src="/assets/duka-logo.svg" alt="" width="24" height="24"><span>duka<span class="tld">.tr</span></span></a>
-      <nav class="footer-links" aria-label="Alt menü">
+      <nav class="footer-links" aria-label="Footer" data-aria-en="Footer" data-aria-tr="Alt menü">
         <a href="/scanread/">ScanRead</a>
+        <a href="https://github.com/duka-tr/scan-read">GitHub</a>
         <a href="mailto:support@duka.tr">support@duka.tr</a>
         <span>© 2026 duka.tr</span>
       </nav>
